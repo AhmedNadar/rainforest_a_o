@@ -8,10 +8,8 @@ class ProductsController < ApplicationController
     end
   end
 
-
-
 # GET /products/1
-  # GET /products/1.json
+# GET /products/1.json
   def show
     @product = Product.find(params[:id])
 
@@ -29,7 +27,7 @@ class ProductsController < ApplicationController
 
     respond_to do |format|
       format.html # new.html.erb
-      format.json { render json: @product }
+      format.json {render json: @product}
     end
   end
 
